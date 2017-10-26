@@ -1,0 +1,62 @@
+<html>
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js">
+</script>
+<script src="../static/js/index.js"></script>
+<style>
+    body{
+      font-size: 15pt;
+      font-family: arial;
+    }
+    .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+
+<body>
+
+    <div style="float:left; widht:50%; margin-left:5%;margin-top:50px">
+        <h1>Proximity Query</h1>
+        <select id = "countryID">
+            <option selected>Select a country</option>
+            <option value = "ANYWHERE"> ANYWHERE </option>
+        </select>
+        <br/>
+        Lat:<input id = "lat" type = "text"> </input>
+        <br/>
+        Long:<input id = "lon" type = "text"> </input>
+        <br/>
+        K<input id = "k" type = "text"></input>
+        </br>
+        <input id= "submit_closest" type = "button" value= "Submit"> </input>
+        <br/><br/>
+        <div id = "result_for_closest">
+
+        </div>
+
+    </div>
+
+
+    <div style="float:right;widht:50%;margin-right:10%;margin-top:50px">
+        <h1>Lexical Query</h1>
+        Keyword:<input id = "keyword" type = "text"> </input>
+        <br/>
+        <input id= "submit_lexical" type = "button" value= "Submit"> </input>
+        <br/><br/>
+        <div id = "result_for_lexical">
+
+        </div>
+
+    </div>
+
+</body>
+</html>
